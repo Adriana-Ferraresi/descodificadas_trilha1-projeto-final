@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Universo do TDAH</title>
+</head>
+<hr />
+
+<body>
+    <header>
+        <nav class="cabecalho__menu">
+            <img class="logotipo" src="img/logotipo.jpg" alt="logotipo">
+            <h2 class="titulo">Universo do TDAH</h2>
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="sobre.html">Sobre</a>
+            <a class="cabecalho__menu__link" href="referencias.html">Referências</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <hr />
+
+    <main>
+        <section>
+            <div>
+                <figure>
+                    <img class="fundo" src="img/contato.jpg" alt="imagem">
+                </figure>
+            </div>
+            <hr />
+
+            <div class="sub_titulo">
+                <h1 class="texto">Fale conosco</h1>
+            </div>
+        </section>
+        <hr />
+        <br><br>
+
+        <br><br>
+
+        <section>
+            <div class="texto">
+                <h2>Email: universotdah@protomail.com</h2>
+                <br>
+
+                <h2>Telef : (43) 3634-5678</h2>
+                <br><br><br>
+            </div>
+
+        </section>
+        <br>
+
+        <section>
+
+            <h1 class="texto">Nosso endereço:</h1>
+
+            <div class="mapa">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234461.46166906122!2d-51.2641183324942!3d-23.335331232641387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb435a57af586d%3A0x23ac11a5c614f971!2sLondrina%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1701808835746!5m2!1spt-BR!2sbr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <br><br>
+
+            <div>
+                <address>
+                    Av dos Marcianos,1036 - Próximo ao Terminal Central<br>
+                    Bairro : Que Luz - Londrina -Paraná<br>
+                    Cep : 86027-666<br>
+                </address> 
+            </div>
+        </section>
+        <br><br>
+
+        <section>
+            <div>
+                <h1>Nossas Redes Sociais!</h1>
+                <br>
+
+                <a href="https://m.facebook.com/TDAHDescomplicado/" target="_blank" rel="noopener"> <img
+                        src="img/facebook.jpg" alt="Logo do Facebook"></a>
+
+                <a href="https://www.instagram.com/movimentotdahbrasil/" target="_blank" rel="noopener">
+                    <img src="img/instagram.jpg" alt="Logo do Instagran"></a>
+
+                <a href="https://twitter.com/TriboTDAH/" target="_blank" rel="noopener"> <img
+                        src="img/twitter.jpg" alt="Logo do Twitter"></a>
+                <br><br>
+
+            </div>
+            <br><br>
+
+            <button class="buy-button">
+                Deixe seu Feedback!
+            </button>
+        </section>
+    </main>
+
+    <script>
+        function buy()
+        {
+            let site = prompt("Gostou do site? Sim ou Não? ");
+            let avaliacao = prompt("Qual a sua nota de 0 a 10? ");
+            let sugestao = prompt("Deixe aqui sua sugestão! ");
+
+            if (site && avaliacao && sugestao)
+            {
+                alert("Sua resposta foi: " + site + ". " + "Sua nota da avaliação é: " + avaliacao + ". " + "E sua sugestão:" + sugestao + ", foi recebida com sucesso!");
+            } else
+            {
+                alert("Agradecemos pelo seu Feedback!");
+            }
+        }
+
+        let buybutton = document.querySelector(".buy-button");
+        buybutton.addEventListener("click", buy);
+
+    </script>
+    <br><br>
+    <hr />
+
+    <footer>
+        <h6>
+            <p>Desenvolvido por Adriana Cristina Ferraresi - Descodificadas 2023_2 - Trilha 1</p>
+        </h6>
+    </footer>
+    <hr />
+
+</body>
+
+</html>
